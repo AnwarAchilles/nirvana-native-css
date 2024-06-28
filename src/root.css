@@ -1,0 +1,80 @@
+/* Simple CSS - beta version
+ * 
+ * created by | Anwar Achilles
+ * 
+ * */
+
+:root {
+  
+  --font-family: Arial, Helvetica, sans-serif;
+  
+  --color-default: rgb(238, 238, 238);
+  --color-default-1: rgb(238, 238, 238, calc(0.2 * 1));
+  --color-default-2: rgb(238, 238, 238, calc(0.2 * 2));
+  --color-default-3: rgb(238, 238, 238, calc(0.2 * 3));
+  --color-default-4: rgb(238, 238, 238, calc(0.2 * 4));
+
+  --color-default-dark: rgb(64, 64, 64);
+  --color-default-dark-1: rgb(64, 64, 64, calc(0.2 * 1));
+  --color-default-dark-2: rgb(64, 64, 64, calc(0.2 * 2));
+  --color-default-dark-3: rgb(64, 64, 64, calc(0.2 * 3));
+  --color-default-dark-4: rgb(64, 64, 64, calc(0.2 * 4));
+
+  --color-primary: rgb(0, 111, 201);
+  --color-primary-1: rgb(0, 111, 201, calc(0.2 * 1));
+  --color-primary-2: rgb(0, 111, 201, calc(0.2 * 2));
+  --color-primary-3: rgb(0, 111, 201, calc(0.2 * 3));
+  --color-primary-4: rgb(0, 111, 201, calc(0.2 * 4));
+  
+  --color-secondary: rgb(40, 40, 40);
+  --color-secondary-1: rgb(40, 40, 40, calc(0.2 * 1));
+  --color-secondary-2: rgb(40, 40, 40, calc(0.2 * 2));
+  --color-secondary-3: rgb(40, 40, 40, calc(0.2 * 3));
+  --color-secondary-4: rgb(40, 40, 40, calc(0.2 * 4));
+
+  --color-light: rgb(255, 255, 255);
+  --color-light-1: rgb(255, 255, 255, calc(0.2 * 1));
+  --color-light-2: rgb(255, 255, 255, calc(0.2 * 2));
+  --color-light-3: rgb(255, 255, 255, calc(0.2 * 3));
+  --color-light-4: rgb(255, 255, 255, calc(0.2 * 4));
+
+  --color-dark: rgb(30, 30, 30);
+  --color-dark-1: rgb(30, 30, 30, calc(0.2 * 1));
+  --color-dark-2: rgb(30, 30, 30, calc(0.2 * 2));
+  --color-dark-3: rgb(30, 30, 30, calc(0.2 * 3));
+  --color-dark-4: rgb(30, 30, 30, calc(0.2 * 4));
+
+  --text-h1: 2.75rem;
+  --text-h2: 2.25rem;
+  --text-h3: 1.75rem;
+  --text-h4: 1.50rem;
+  --text-h5: 1.25rem;
+  --text-h6: 1rem;
+  --text-small: .75rem;
+
+  --size-width-1: 100%;
+  --size-width-2: 50%;
+  --size-width-3: 33.3333%;
+  --size-width-4: 25%;
+  --size-width-5: 20%;
+  --size-width-6: 16.6667%;
+
+  --size-height-1: 100%;
+  --size-height-2: 50%;
+  --size-height-3: 33.3333%;
+  --size-height-4: 25%;
+  --size-height-5: 20%;
+  --size-height-6: 16.6667%;
+
+  --size-padding-1: 0.5rem;
+  --size-padding-2: 1rem;
+  --size-padding-3: 1.5rem;
+  --size-padding-4: 2rem;
+  --size-padding-5: 2.5rem;
+
+  --size-margin-1: 0.5rem;
+  --size-margin-2: 1rem;
+  --size-margin-3: 1.5rem;
+  --size-margin-4: 2rem;
+  --size-margin-5: 2.5rem;
+}

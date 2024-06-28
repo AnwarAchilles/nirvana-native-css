@@ -1,0 +1,103 @@
+/* 
+ * BUTTON
+ * */
+
+button, [button] {
+  letter-spacing: .04rem;
+  border: 0px solid transparent;
+  padding: var(--size-padding-1) var(--size-padding-2);
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.3rem;
+}
+a[button] {
+  text-decoration: none;
+}
+
+button:hover, button:focus,
+[button]:hover, [button]:focus {
+  background-color: var(--color-default-2);
+}
+a[button]:hover, a[button]:focus {
+  text-decoration: none;
+}
+
+body[dark] button:hover, body[dark] button:focus,
+body[dark] [button]:hover, body[dark] [button]:focus {
+  background-color: var(--color-default-dark-2);
+}
+
+
+/* color */
+[button*="default"] {
+  background-color: var(--color-default);
+}
+body[dark] [button*="default"] {
+  color: var(--color-light);
+  background-color: var(--color-default-dark);
+}
+[button*="default"]:hover, [button*="default"]:focus {
+  background-color: var(--color-default-4) !important;
+  box-shadow: 0 4px 10px 0 var(--color-default-2);
+}
+body[dark] [button*="default"]:hover, body[dark] [button*="default"]:focus {
+  background-color: var(--color-default-dark-4) !important;
+  box-shadow: 0 4px 10px 0 var(--color-default-dark-2);
+}
+
+[button*="primary"] {
+  background-color: var(--color-primary);
+  color: white;
+}
+[button*="primary"]:hover, [button*="primary"]:focus {
+  background-color: var(--color-primary-4) !important;
+  box-shadow: 0 4px 10px 0 var(--color-primary-2);
+}
+
+[button*="secondary"] {
+  background-color: var(--color-secondary);
+  color: white;
+}
+[button*="secondary"]:hover, [button*="secondary"]:focus {
+  background-color: var(--color-secondary-4) !important;
+  box-shadow: 0 4px 10px 0 var(--color-secondary-2);
+}
+
+[button*="dark"] {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+[button*="dark"]:hover, [button*="dark"]:focus {
+  background-color: var(--color-dark-4) !important;
+  box-shadow: 0 4px 10px 0 var(--color-dark-2);
+}
+
+[button*="light"] {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+[button*="light"]:hover, [button*="light"]:focus {
+  background-color: var(--color-light-4) !important;
+  box-shadow: 0 4px 10px 0 var(--color-light-2);
+}
+
+
+
+/* size */
+[button*="sm"] {
+  padding: var(--size-padding-0) var(--size-padding-1);
+}
+
+[button*="md"] {
+  padding: var(--size-padding-0) var(--size-padding-1);
+}
+
+[button*="lg"] {
+  padding: var(--size-padding-1) var(--size-padding-2);
+}
+
+[button*="xl"] {
+  padding: var(--size-padding-2) var(--size-padding-3);
+}
+
+

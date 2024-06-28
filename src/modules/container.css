@@ -1,0 +1,41 @@
+[container] {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--size-padding-2);
+  padding-left: var(--size-padding-2);
+}
+
+[container="fluid"] {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 576px) {
+  [container],
+  [container="fluid"] {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  [container],
+  [container="fluid"] {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  [container],
+  [container="fluid"] {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  [container],
+  [container="fluid"] {
+    max-width: 1140px;
+  }
+}
