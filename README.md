@@ -1,5 +1,5 @@
-# Nirvana JS
-Lightweight device to build simple JS-based Apps in JavaScript programming language environment
+# Nirvana CSS
+Lightweight CSS Framework, for faster and easier web development
 
 version - Beta
 
