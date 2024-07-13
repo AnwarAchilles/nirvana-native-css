@@ -1064,25 +1064,25 @@ body[dark] [card="default"] {
 }
 
 /* direction */
-[list*="x"] {
+[list*="vertical"] {
   flex-direction: column;
 }
-[list*="y"] {
+[list*="horizontal"] {
   flex-direction: row;
 }
 
 /* bordered */
-[list*="x"][list*="bordered"] > * {
+[list*="vertical"][list*="bordered"] > * {
   border-bottom: 1px solid var(--color-dark-1);
 }
-[list*="x"][list*="bordered"] > *:nth-last-child(1) {
+[list*="vertical"][list*="bordered"] > *:nth-last-child(1) {
   border-bottom: none;
 }
 
-[list*="y"][list*="bordered"] > * {
+[list*="horizontal"][list*="bordered"] > * {
   border-right: 1px solid var(--color-dark-1);
 }
-[list*="y"][list*="bordered"] > *:nth-last-child(1) {
+[list*="horizontal"][list*="bordered"] > *:nth-last-child(1) {
   border-right: none;
 }
 /* 
