@@ -1,0 +1,34 @@
+/* 
+ * FLEX BOX
+ * */
+[flex] { display: flex; }
+[flex*="1"] { flex: 1; }
+[flex*="row"] { flex-direction: row; }
+[flex*="row-reverse"] { flex-direction: row-reverse; }
+[flex*="column"] { flex-direction: column; }
+[flex*="column-reverse"] { flex-direction: column-reverse; }
+[flex*="wrap"] { flex-wrap: wrap; }
+[flex*="middle"] { align-items: center; }
+[flex*="start"] { justify-content: flex-start; }
+[flex*="center"] { justify-content: center; }
+[flex*="end"] { justify-content: flex-end; }
+[flex*="between"] { justify-content: space-between; }
+[flex*="around"] { justify-content: space-around; }
+
+@each $size, $prefix in $screen {
+  @media (min-width: $prefix) {
+    [#{$size}\:flex] { display: flex; }
+    [#{$size}\:flex*="1"] { flex: 1; }
+    [#{$size}\:flex*="row"] { flex-direction: row; }
+    [#{$size}\:flex*="row-reverse"] { flex-direction: row-reverse; }
+    [#{$size}\:flex*="column"] { flex-direction: column; }
+    [#{$size}\:flex*="column-reverse"] { flex-direction: column-reverse; }
+    [#{$size}\:flex*="wrap"] { flex-wrap: wrap; }
+    [#{$size}\:flex*="middle"] { align-items: center; }
+    [#{$size}\:flex*="start"] { justify-content: flex-start; }
+    [#{$size}\:flex*="center"] { justify-content: center; }
+    [#{$size}\:flex*="end"] { justify-content: flex-end; }
+    [#{$size}\:flex*="between"] { justify-content: space-between; }
+    [#{$size}\:flex*="around"] { justify-content: space-around; }
+  }
+}

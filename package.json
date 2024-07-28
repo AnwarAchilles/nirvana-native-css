@@ -1,0 +1,17 @@
+{
+  "name": "sass-autoprefixer-setup",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass src/nirvana.scss dist/nirvana.css",
+    "postcss": "postcss dist/nirvana.css --use autoprefixer -o ./nirvana.css",
+    "minify": "postcss ./nirvana.css --use cssnano -o ./nirvana.min.css",
+    "build": "npm run sass && npm run postcss && npm run minify"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.8"
+  }
+}
