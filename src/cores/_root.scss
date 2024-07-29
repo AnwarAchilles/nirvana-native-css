@@ -1,0 +1,46 @@
+/* Nirvana CSS - beta version
+ * 
+ * created by | Anwar Achilles
+ * normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+ * 
+ * */
+ :root {
+  
+  --font-family: Arial, Helvetica, sans-serif;
+  
+  @include generate-opacity-variables($color, 4);
+
+  --text-h1: 2.75rem;
+  --text-h2: 2.25rem;
+  --text-h3: 1.75rem;
+  --text-h4: 1.50rem;
+  --text-h5: 1.25rem;
+  --text-h6: 1rem;
+  --text-small: .75rem;
+
+  --size-width-1: 100%;
+  --size-width-2: 50%;
+  --size-width-3: 33.3333%;
+  --size-width-4: 25%;
+  --size-width-5: 20%;
+  --size-width-6: 16.6667%;
+
+  --size-height-1: 100%;
+  --size-height-2: 50%;
+  --size-height-3: 33.3333%;
+  --size-height-4: 25%;
+  --size-height-5: 20%;
+  --size-height-6: 16.6667%;
+
+  --size-padding-1: 0.5rem;
+  --size-padding-2: 1rem;
+  --size-padding-3: 1.5rem;
+  --size-padding-4: 2rem;
+  --size-padding-5: 2.5rem;
+
+  --size-margin-1: 0.5rem;
+  --size-margin-2: 1rem;
+  --size-margin-3: 1.5rem;
+  --size-margin-4: 2rem;
+  --size-margin-5: 2.5rem;
+}

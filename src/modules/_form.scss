@@ -1,3 +1,7 @@
+/* 
+ * FORM
+ * */
+
 input,
 select,
 textarea {
@@ -8,6 +12,12 @@ textarea {
   margin-bottom: 0.3rem;
   outline: 0;
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
 body[dark] input,
 body[dark] select,
 body[dark] textarea {
@@ -55,23 +65,19 @@ input[type="color"] {
   padding: 0rem;
 }
 
-
-
-
-
 /* size */
 [form="sm"] {
   padding: var(--size-padding-0) var(--size-padding-1);
 }
 
 [form="md"] {
-  padding: var(--size-padding-0) var(--size-padding-1);
-}
-
-[form="lg"] {
   padding: var(--size-padding-1) var(--size-padding-2);
 }
 
-[form="xl"] {
+[form="lg"] {
   padding: var(--size-padding-2) var(--size-padding-3);
+}
+
+[form="xl"] {
+  padding: var(--size-padding-3) var(--size-padding-4);
 }

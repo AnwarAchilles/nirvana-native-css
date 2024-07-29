@@ -1,0 +1,17 @@
+
+// Fungsi untuk membuat warna dengan opacity
+@function color-with-opacity($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+// Mixin untuk membuat variabel CSS dengan opacity yang berbeda
+@mixin generate-opacity-variables($color-map, $steps) {
+  $step: 1 / $steps; // Pembagian konvensional
+  @each $name, $color in $color-map {
+    --#{$name}: #{$color};
+    @for $i from 1 through $steps {
+      $opacity: $i * $step;
+      --#{$name}-#{$i}: #{color-with-opacity($color, $opacity)};
+    }
+  }
+}

@@ -11,22 +11,46 @@ body[dark] [card="default"] {
   background-color: var(--color-default-dark);
 }
 
-[card="primary"] {
-  color: var(--color-light);
-  background-color: var(--color-primary);
+@each $color, $color-invert in $color-set {
+  [card="#{$color}"] {
+    color: var(--color-#{$color-invert});
+    background-color: var(--color-#{$color});
+  }
 }
 
-[card="secondary"] {
-  color: var(--color-light);
-  background-color: var(--color-secondary);
-}
+@each $size, $prefix in $screen {
+  @media (min-width: $prefix) {
+    [#{$size}\:card] {
+      padding: var(--size-padding-1) var(--size-padding-2);
+    }
 
-[card="dark"] {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-}
+    [#{$size}\:card="default"] {
+      color: var(--color-dark);
+      background-color: var(--color-default);
+    }
+    body[dark] [#{$size}\:card="default"] {
+      color: var(--color-light);
+      background-color: var(--color-default-dark);
+    }
 
-[card="light"] {
-  color: var(--color-dark);
-  background-color: var(--color-light);
+    [#{$size}\:card="primary"] {
+      color: var(--color-light);
+      background-color: var(--color-primary);
+    }
+
+    [#{$size}\:card="secondary"] {
+      color: var(--color-light);
+      background-color: var(--color-secondary);
+    }
+
+    [#{$size}\:card="dark"] {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
+
+    [#{$size}\:card="light"] {
+      color: var(--color-dark);
+      background-color: var(--color-light);
+    }
+  }
 }

@@ -2,7 +2,7 @@
  * LIST
  * */
 
-[list] {
+ [list] {
   list-style-position: outside;
   padding: 0;
   display: flex;
@@ -36,4 +36,45 @@
 }
 [list*="horizontal"][list*="bordered"] > *:nth-last-child(1) {
   border-right: none;
+}
+
+/* color */
+@each $color, $color-invert in $color-set {
+  [list="#{$color}"] {
+    background-color: var(--color-#{$color});
+    color: var(--color-#{$color-invert});
+  }
+  body[dark] [list="#{$color}"] {
+    background-color: var(--color-#{$color}-dark);
+    color: var(--color-light);
+  }
+}
+
+/* responsive */
+@each $size, $prefix in $screen {
+  @media (min-width: $prefix) {
+    [#{$size}\:list] {
+      padding: var(--size-padding-1) var(--size-padding-2);
+    }
+
+    [#{$size}\:list="default"] {
+      color: var(--color-dark);
+      background-color: var(--color-default);
+    }
+    body[dark] [#{$size}\:list="default"] {
+      color: var(--color-light);
+      background-color: var(--color-default-dark);
+    }
+
+    @each $color, $color-invert in $color-set {
+      [#{$size}\:list="#{$color}"] {
+        background-color: var(--color-#{$color});
+        color: var(--color-#{$color-invert});
+      }
+      body[dark] [#{$size}\:list="#{$color}"] {
+        background-color: var(--color-#{$color}-dark);
+        color: var(--color-light);
+      }
+    }
+  }
 }

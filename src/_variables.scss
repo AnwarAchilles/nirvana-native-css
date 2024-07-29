@@ -1,6 +1,19 @@
 
+$color: (
+  "default": #eeeeee,
+  "default-dark": #404040,
+  "primary": #006fc9,
+  "secondary": #282828,
+  "light": #ffffff,
+  "dark": #1e1e1e,
+);
 
-
+$color-set: (
+  "primary": "light",
+  "secondary": "light",
+  "light": "dark",
+  "dark": "light",
+);
 
 $screen: (
   "sm": 640px,
