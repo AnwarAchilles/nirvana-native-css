@@ -4,13 +4,19 @@
   @return rgba($color, $opacity);
 }
 
+
 // Mixin untuk membuat variabel CSS dengan opacity yang berbeda
 @mixin generate-opacity-variables($color-map, $steps) {
-  $step: 1 / $steps; // Pembagian konvensional
+  // Menentukan langkah opacity
+  $step: 1 / ($steps - 1);
+
   @each $name, $color in $color-map {
+    // Variabel default tanpa opacity
     --color-#{$name}: #{$color};
+
     @for $i from 1 through $steps {
-      $opacity: $i * $step;
+      // Menghasilkan opacity yang berbeda
+      $opacity: ($i - 1) * $step;
       --color-#{$name}-#{$i}: #{color-with-opacity($color, $opacity)};
     }
   }
