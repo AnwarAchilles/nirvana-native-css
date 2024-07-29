@@ -7,36 +7,36 @@
  * */
 :root {
   --font-family: Arial, Helvetica, sans-serif;
-  --default: #eeeeee;
-  --default-1: rgba(238, 238, 238, 0.25);
-  --default-2: rgba(238, 238, 238, 0.5);
-  --default-3: rgba(238, 238, 238, 0.75);
-  --default-4: #eeeeee;
-  --default-dark: #404040;
-  --default-dark-1: rgba(64, 64, 64, 0.25);
-  --default-dark-2: rgba(64, 64, 64, 0.5);
-  --default-dark-3: rgba(64, 64, 64, 0.75);
-  --default-dark-4: #404040;
-  --primary: #006fc9;
-  --primary-1: rgba(0, 111, 201, 0.25);
-  --primary-2: rgba(0, 111, 201, 0.5);
-  --primary-3: rgba(0, 111, 201, 0.75);
-  --primary-4: #006fc9;
-  --secondary: #282828;
-  --secondary-1: rgba(40, 40, 40, 0.25);
-  --secondary-2: rgba(40, 40, 40, 0.5);
-  --secondary-3: rgba(40, 40, 40, 0.75);
-  --secondary-4: #282828;
-  --light: #ffffff;
-  --light-1: rgba(255, 255, 255, 0.25);
-  --light-2: rgba(255, 255, 255, 0.5);
-  --light-3: rgba(255, 255, 255, 0.75);
-  --light-4: white;
-  --dark: #1e1e1e;
-  --dark-1: rgba(30, 30, 30, 0.25);
-  --dark-2: rgba(30, 30, 30, 0.5);
-  --dark-3: rgba(30, 30, 30, 0.75);
-  --dark-4: #1e1e1e;
+  --color-default: #eeeeee;
+  --color-default-1: rgba(238, 238, 238, 0.25);
+  --color-default-2: rgba(238, 238, 238, 0.5);
+  --color-default-3: rgba(238, 238, 238, 0.75);
+  --color-default-4: #eeeeee;
+  --color-default-dark: #404040;
+  --color-default-dark-1: rgba(64, 64, 64, 0.25);
+  --color-default-dark-2: rgba(64, 64, 64, 0.5);
+  --color-default-dark-3: rgba(64, 64, 64, 0.75);
+  --color-default-dark-4: #404040;
+  --color-primary: #006fc9;
+  --color-primary-1: rgba(0, 111, 201, 0.25);
+  --color-primary-2: rgba(0, 111, 201, 0.5);
+  --color-primary-3: rgba(0, 111, 201, 0.75);
+  --color-primary-4: #006fc9;
+  --color-secondary: #282828;
+  --color-secondary-1: rgba(40, 40, 40, 0.25);
+  --color-secondary-2: rgba(40, 40, 40, 0.5);
+  --color-secondary-3: rgba(40, 40, 40, 0.75);
+  --color-secondary-4: #282828;
+  --color-light: #ffffff;
+  --color-light-1: rgba(255, 255, 255, 0.25);
+  --color-light-2: rgba(255, 255, 255, 0.5);
+  --color-light-3: rgba(255, 255, 255, 0.75);
+  --color-light-4: white;
+  --color-dark: #1e1e1e;
+  --color-dark-1: rgba(30, 30, 30, 0.25);
+  --color-dark-2: rgba(30, 30, 30, 0.5);
+  --color-dark-3: rgba(30, 30, 30, 0.75);
+  --color-dark-4: #1e1e1e;
   --text-h1: 2.75rem;
   --text-h2: 2.25rem;
   --text-h3: 1.75rem;
@@ -141,7 +141,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**

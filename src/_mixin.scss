@@ -8,10 +8,10 @@
 @mixin generate-opacity-variables($color-map, $steps) {
   $step: 1 / $steps; // Pembagian konvensional
   @each $name, $color in $color-map {
-    --#{$name}: #{$color};
+    --color-#{$name}: #{$color};
     @for $i from 1 through $steps {
       $opacity: $i * $step;
-      --#{$name}-#{$i}: #{color-with-opacity($color, $opacity)};
+      --color-#{$name}-#{$i}: #{color-with-opacity($color, $opacity)};
     }
   }
 }
