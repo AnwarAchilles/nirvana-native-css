@@ -1,3 +1,4 @@
+@use 'sass:math';
 
 // Fungsi untuk membuat warna dengan opacity
 @function color-with-opacity($color, $opacity) {
@@ -7,16 +8,16 @@
 
 // Mixin untuk membuat variabel CSS dengan opacity yang berbeda
 @mixin generate-opacity-variables($color-map, $steps) {
-  // Menentukan langkah opacity
-  $step: 1 / ($steps - 1);
+  $min-opacity: 0.2; // Nilai minimum opacity (bisa disesuaikan)
+  $step: math.div(1 - $min-opacity, $steps - 1); // Hitung langkah berdasarkan jarak dari $min-opacity ke 1
 
   @each $name, $color in $color-map {
     // Variabel default tanpa opacity
     --color-#{$name}: #{$color};
 
     @for $i from 1 through $steps {
-      // Menghasilkan opacity yang berbeda
-      $opacity: ($i - 1) * $step;
+      // Menghasilkan opacity yang berbeda dengan basis minimum opacity
+      $opacity: $min-opacity + (($i - 1) * $step);
       --color-#{$name}-#{$i}: #{color-with-opacity($color, $opacity)};
     }
   }

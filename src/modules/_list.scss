@@ -2,7 +2,7 @@
  * LIST
  * */
 
- [list] {
+ [list]:not(input) {
   list-style-position: outside;
   padding: 0;
   display: flex;
